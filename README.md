@@ -39,3 +39,44 @@ The Star-Delta starter is a method commonly used for starting large three-phase 
 - Each phase of the supply voltage is applied directly across one winding.
 - Voltage across each winding = Vline.
 
+## Schematic
+
+![Schematic](1.png)
+
+This schematic shows the power and control circuit.
+
+## Advantages
+1. Reduced Starting Current: Prevents sudden voltage drops in the system.
+2. Simple and Economical: Low-cost solution for starting large motors.
+3. Widely Used: Common in industries where large induction motors are used, such as pumps, fans, and conveyors.
+
+## Disadvantages
+1. Torque Reduction: Starting torque is only one-third of the full torque, which may not be sufficient for heavy loads.
+2. Sudden Transition: The switch from Star to Delta can cause mechanical and electrical transients.
+3. Fixed Time Delay: If the timer is not correctly set, it may switch to Delta too early or too late.
+
+## Applications
+- Pumps
+- Compressors
+- Fans
+- Conveyors
+- Other industrial applications where reduced inrush current is essential.
+
+## Practical Considerations
+1. Timer Setting: Proper tuning of the timer is crucial to ensure smooth transitions and avoid mechanical shock.
+2. Motor Suitability: The Star-Delta method is effective for motors designed for Delta operation but may not suit all motor types.
+3. Voltage Rating: Ensure the motor’s voltage rating matches the supply voltage to avoid underperformance or damage.
+
+## Simulation Result
+
+-  Startup Mode: Star Contactor
+
+![Star](2.png)
+
+- After 5 seconds the Delta configuration takes place:
+
+![Delta](3.png)
+
+- In case of Overload:
+
+![Overload](4.png)
